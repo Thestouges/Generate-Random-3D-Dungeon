@@ -1,11 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class PlayerMovementController : MonoBehaviour
 {
     public float PlayerSpeed = 1;
     Rigidbody Rigidbody;
+    bool clicked = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -45,6 +46,15 @@ public class PlayerMovementController : MonoBehaviour
         if (Input.GetKey(KeyCode.E))
         {
             transform.Rotate(new Vector3(0, 0, -200) * Time.deltaTime * PlayerSpeed/4);
+        }
+        if (Input.GetMouseButtonDown(0) && clicked == false)
+        {
+            SceneManager.LoadScene("SampleScene");
+            clicked = true;
+        }
+        if (Input.GetMouseButtonUp(0))
+        {
+            clicked = false;
         }
     }
 }

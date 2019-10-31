@@ -158,9 +158,9 @@ MonoBehaviour:
   - {fileID: 2084363376709186630, guid: c9a92cc685370914aa68eabcf85450f1, type: 3}
   - {fileID: 1662671425631208680, guid: 2f3faab642cd96c449dea6cc18dad669, type: 3}
   - {fileID: 4628283950374309118, guid: 2d29fcef93dc6ce49aa5e268e5cff5b8, type: 3}
-  DungeonSize: 5
+  DungeonSize: 10
   RoomSize: 1
-  TotalRooms: 30
+  TotalRooms: 10
 --- !u!4 &1096419855
 Transform:
   m_ObjectHideFlags: 0
